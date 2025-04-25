@@ -13,7 +13,7 @@ type Storage struct{
 
 func NewStorage() *Storage {
 	return &Storage{
-		files: make(map[uuid.UUID]*file.File),
+		files: make(map[uuid.UUID]*file.File, 0),
 	}
 }
 
